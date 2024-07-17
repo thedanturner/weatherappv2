@@ -16,7 +16,19 @@ body {
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    animation: fadeInAnimation 4s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .container {
