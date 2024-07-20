@@ -31,6 +31,12 @@ body {
     }
 }
 
+.header {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    
+}
 .container {
     position: relative;
     width: 400px;
