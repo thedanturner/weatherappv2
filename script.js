@@ -14,7 +14,8 @@ search.addEventListener('click', () => {
         return;
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`).then(response => response.json()).then(json => {
-
+    console.log(json);
+    
         if (json.cod == '404') {
             cityHide.textContent = city;
             container.style.height = '400px';
